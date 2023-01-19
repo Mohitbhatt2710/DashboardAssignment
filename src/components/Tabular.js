@@ -10,15 +10,27 @@ import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 // import Paper from '@mui/material/Paper';
 
-function createData(Avatar, Email, Name, Roles) {
-  return { Avatar, Email, Name, Roles };
+function createData(Avatar, Email, Name, Roles, Status) {
+  return { Avatar, Email, Name, Roles, Status };
 }
 
 const rows = [
-  createData('Avatar1', 'mohit@gmail.com', 'Mohit Bhatt', 'Not Invited'),
-  createData('Avatar2', 'shubham22@gmail.com', 'Shubham', 'Invited'),
-  createData('Avatar3', 'pragya@gmail.com', 'Pragya', 'Invited'),
-  createData('Avatar4', 'shanu22@gmail.com', 'Shanu', 'Invited'),
+  createData(
+    'Avatar1',
+    'mohit@gmail.com',
+    'Mohit Bhatt',
+    'Admin',
+    'Not Invited'
+  ),
+  createData(
+    'Avatar2',
+    'shubham22@gmail.com',
+    'Shubham',
+    'Custom Role',
+    'Invited'
+  ),
+  createData('Avatar3', 'pragya@gmail.com', 'Pragya', 'Custom Role', 'Invited'),
+  createData('Avatar4', 'shanu22@gmail.com', 'Shanu', 'Custom Role', 'Invited'),
 ];
 
 function Tabular() {
@@ -32,7 +44,7 @@ function Tabular() {
               <TableCell align="left">Email</TableCell>
               <TableCell align="left">Name</TableCell>
               <TableCell align="left">Roles</TableCell>
-              <TableCell align="left"></TableCell>
+              <TableCell align="left">Status</TableCell>
             </TableRow>
           </TableHead>
           <TableBody>
@@ -47,7 +59,7 @@ function Tabular() {
                 <TableCell align="left">{row.Email}</TableCell>
                 <TableCell align="left">{row.Name}</TableCell>
                 <TableCell align="left">{row.Roles}</TableCell>
-                <TableCell align="left">{row.protein}</TableCell>
+                <TableCell align="left">{row.Status}</TableCell>
               </TableRow>
             ))}
           </TableBody>
