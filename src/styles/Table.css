@@ -1,0 +1,90 @@
+.table-main{
+  margin-top: 20px;
+  border:2px solid lightgrey;
+  border-radius: 5px ;
+}
+
+
+/* styling the table entities down below  */
+
+
+.table-main tr{
+  color: gray;
+
+}
+
+.th1{
+  padding: 20px;
+  border: 1px solid lightgrey;
+}
+
+.th2{
+  padding: 50px;
+  border: 1px solid lightgrey;
+  
+
+}
+/* 
+.th2 div{
+  border: 2px solid red;
+} */
+
+
+.th3{
+  padding: 50px;
+  border: 1px solid lightgrey;
+
+}
+
+.th4{
+  padding: 50px;
+  border: 1px solid lightgrey;
+
+}
+
+.th5{
+  padding: 50px;
+  border: 1px solid lightgrey;
+
+}
+
+.th6{
+  padding: 50px;
+  border: 1px solid lightgrey;
+
+}
+
+
+
+
+/* input styling in the table */
+
+/* .th1 input{
+  border: 3px solid grey;
+} */
+
+
+/* rows */
+
+.tr1{
+  border: 2px solid lightblue;
+}
+
+
+/* button styling inside the table  */
+
+.bt-invite{
+
+  color: white;
+  background-color: yellowgreen;
+  border-radius: 20px ;
+
+
+}
+
+.bt-active{
+  color: white;
+  background-color: green;
+  border-radius: 20px ;
+
+}

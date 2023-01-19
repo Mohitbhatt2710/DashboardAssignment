@@ -1,0 +1,80 @@
+
+/* main div to not overflow */
+
+.main{
+
+  border: 2px solid lightgrey;
+  border-radius: 5px;
+  display: flex;
+  margin-top: 20px;
+  padding-left: 20px;
+  padding-top: 14px;
+
+}
+
+.sub-main {
+  display: flex;
+  /* padding: 1rem 10rem; */
+  justify-content: space-between;
+
+}
+
+
+
+.form-section{
+  display: flex;
+  display: block;
+  margin: 30px;
+  justify-content: space-between;
+
+}
+
+
+
+
+.extra-form input{
+  margin: 20px;
+}
+
+/* styling for Placeholder to the top */
+
+.form-section {
+  position: relative;
+  z-index: 1;
+}
+
+/* .form-section::before{
+  content: ;
+} */
+
+.form-section ::placeholder{
+  color: rgb(172, 160, 160);
+  position: absolute;
+  margin-left: -200px;
+  /* cursor:not-allowed; */
+  
+  z-index: 4;
+}
+
+/* Button below the input fields */
+
+/* button styling */
+
+.search{
+  background-color: rgb(12, 167, 219);
+}
+
+/* this has to improve in terms of CSS , this margin is a quick fix , should be replaced by scope/block later */
+.searchButton{
+  margin-left: 70rem;
+  margin-top: 20px;
+}
+
+
+
+
+
+
+
+/* media query would be needed for small devices to adjust the outer div */
+
